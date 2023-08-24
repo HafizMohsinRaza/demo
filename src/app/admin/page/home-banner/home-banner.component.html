@@ -1,0 +1,109 @@
+<router-outlet></router-outlet>
+
+
+<!-- <div class="main-container">
+  <div class="header">
+    <div class="title">Home Slider Banner</div>
+    
+    <a class="add-banner" *ngIf="!submitted" mat-button (click)="resetForm()">Add New Banner</a>
+  </div>
+  <div class="card">
+    <div style="width: 80%">
+      <div *ngIf="submitted">
+        <form [formGroup]="form" (submit)="onSubmit()">
+          <div class="banner-logo">
+            <button mat-button type="button" (click)="imagePicker.click()">
+              Pick logo
+            </button>
+            <input type="file" #imagePicker />
+          </div>
+          <div class="display-image">
+            <button mat-button type="button" (click)="imagePicker.click()">
+              Pick Image
+            </button>
+            <input type="file" #imagePicker />
+          </div>
+
+          <mat-form-field>
+            <mat-label>Banner Heading</mat-label>
+            <input matInput formControlName="heading" type="text" />
+
+            <mat-error *ngIf="form.get('heading').invalid"
+              >Please enter your name.</mat-error
+            >
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Short Description</mat-label>
+            <input matInput formControlName="description" type="description" />
+            <mat-error *ngIf="form.get('description').invalid"
+              >Please enter a valid email.</mat-error
+            >
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Slider Banner Url</mat-label>
+            <input matInput formControlName="url" type="url" />
+            <mat-error *ngIf="form.get('url').invalid"
+              >Please enter a valid email.</mat-error
+            >
+          </mat-form-field>
+          <button class="submit-button" type="submit">Add Banner</button>
+        </form>
+      </div>
+    </div>
+
+    <div *ngIf="!submitted" class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Heading</th>
+            <th>Description</th>
+            <th>Url</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let content of imgCollection">
+            <td>{{ content.heading }}</td>
+            <td>{{ content.description }}</td>
+            <td>{{ content.url }}</td>
+            <td>
+              <a class="update" [routerLink]="['edit', content._id]">Update</a>
+              <button class="delete" (click)="onDelete(content._id)" >Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="quote-wrapper">
+        <svg
+          class="checkmark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 52 52"
+        >
+          <circle
+            class="checkmark__circle"
+            cx="26"
+            cy="26"
+            r="25"
+            fill="none"
+          />
+          <path
+            class="checkmark__check"
+            fill="none"
+            d="M14.1 27.2l7.1 7.2 16.7-16.8"
+          />
+        </svg>
+        <div class="submit-title">
+          Congratulations! <br />
+          We have received your inquiry
+        </div>
+        <div class="submit-sub">
+          Thank you so much for your inquiry! <br />
+          You can expect to hear back from our expert team very soon
+        </div>
+        <button mat-flat-button class="quote-button" (click)="resetForm()">
+          Request Another Quote
+        </button>
+      </div>
+    </div>
+  </div>
+</div> -->
